@@ -5,8 +5,8 @@
  */
 package methods;
 
-import machineL.methods.ArffLine;
-import machineL.methods.Knn;
+import methods.ArffLine;
+import methods.Knn;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
