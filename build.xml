@@ -10,20 +10,7 @@
 <project name="learning" default="default" basedir=".">
     <description>Builds, tests, and runs the project learning.</description>
     <import file="nbproject/build-impl.xml"/>
-    <property name="src.dir" value="${basedir}/src"/>
-    <property name="lib.dir" value="${basedir}/libs"/>
-    <property name="bin.dir" value="${basedir}/build/classes"/>
-    <property name="classes.test" value="${basedir}/test"/>
 
-    <path id="lib.path">
-        <fileset dir="${project.lib.dir}" includes="libs/*.jar"/>
-    </path>
-    
-    <target name="-pre-init">
-        <javac debug="on" srcdir="${src.dir}" destdir="${bin.dir}" includes="**">
-            <classpath refid="lib.path" />
-        </javac>
-    </target>
     <!--
 
     There exist several targets which are by default empty and which can be 
