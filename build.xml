@@ -10,6 +10,14 @@
 <project name="learning" default="default" basedir=".">
     <description>Builds, tests, and runs the project learning.</description>
     <import file="nbproject/build-impl.xml"/>
+    <property name="project.src.dir" value="${basedir}/src"/>
+    <property name="project.lib.dir" value="${basedir}/libs"/>
+    <property name="project.classes.test" value="${basedir}/test"/>
+
+    <path id="lib.path">
+        <fileset dir="${project.lib.dir}" includes="**/*.jar"/>
+    </path>
+
     <!--
 
     There exist several targets which are by default empty and which can be 
