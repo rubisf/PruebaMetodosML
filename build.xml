@@ -15,7 +15,7 @@
     <property name="project.classes.test" value="${basedir}/test"/>
 
     <path id="lib.path">
-        <fileset dir="${project.lib.dir}" includes="**/*.jar"/>
+        <fileset dir="${project.lib.dir}" includes="libs/*.jar"/>
     </path>
 
     <!--
