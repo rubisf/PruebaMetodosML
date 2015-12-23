@@ -17,7 +17,7 @@
     <path id="lib.path">
         <fileset dir="${project.lib.dir}" includes="libs/*.jar"/>
     </path>
-    <classpath refid="lib.path" />
+    
     <!--
 
     There exist several targets which are by default empty and which can be 
