@@ -1,4 +1,4 @@
-package machineL.methods;
+package methods;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -41,7 +41,7 @@ public class Kmeans {
 	}
 	
 	/**
-	 * Extrae un n�mero medio
+	 * Extrae un numero medio
 	 * @return
 	 */
 	private float getMedio(int col, List<ArffLine> elems){

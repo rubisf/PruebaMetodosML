@@ -1,4 +1,4 @@
-package machineL.methods;
+package methods;
 
 
 import java.util.Collections;
@@ -10,7 +10,7 @@ public class Knn {
 	private int k;
 	private List<ArffLine> training;
 	
-	//Distancia euclídea. Hago el size de la instancia porque el training puede contener el resultado
+	//Distancia euclï¿½dea. Hago el size de la instancia porque el training puede contener el resultado
 	private float distancia(ArffLine training,ArffLine instance){
 		float dist = 0;
 		for(int i = 0;i<instance.getNumFeatures();i++){
@@ -32,7 +32,7 @@ public class Knn {
 			float dist = this.distancia(this.training.get(i),testInstance);
 			distancias.get(i).addFeature(dist);
 		}
-		//Ordeno las distancias, que las he añadido en el último elemento
+		//Ordeno las distancias, que las he anadido en el ultimo elemento
 		extracted_order(distancias);
 		
 		System.out.println("asdf");
@@ -58,7 +58,7 @@ public class Knn {
 	}
 	
 	private float getMaximoRepetido(ArffLine vecinos){
-		//EL campeón es:
+		//EL campeï¿½n es:
 		float max = Float.MIN_VALUE;
 		int maxFreq = 0;
 		List<Float> vecinosar = vecinos.getAsList();

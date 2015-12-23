@@ -1,4 +1,4 @@
-package machineL.methods;
+package methods;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

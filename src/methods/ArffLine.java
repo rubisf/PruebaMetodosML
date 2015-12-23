@@ -1,4 +1,4 @@
-package machineL.methods;
+package methods;
 
 import java.util.LinkedList;
 import java.util.List;
