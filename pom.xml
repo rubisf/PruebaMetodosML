@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.wakaleo.gameoflife</groupId>
-    <artifactId>gameoflife</artifactId>
+    <groupId>machine</groupId>
+    <artifactId>learning</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>gameoflife</name>
-    <url>https://github.com/wakaleo/game-of-life</url>
+    <name>machinelearning</name>
+    <url></url>
     <properties>
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,12 +20,6 @@
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
-
-    <scm>
-        <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
-        <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
-        <url>scm:git:git@github.com:${github.account}/game-of-life.git</url>
-    </scm>
     <build>
         <plugins>
             <plugin>
@@ -206,12 +200,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>gameoflife-build</module>
-        <module>gameoflife-core</module>
-        <module>gameoflife-web</module>
-    </modules>
     <profiles>
         <profile>
             <id>development</id>
