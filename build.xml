@@ -20,10 +20,12 @@
 </path>
 
 <!--in your javac task include the classpath -->
+<target name="test">
 <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" source="${source}" target="${target}">
     <src path="src"/>
     <classpath refid="projectname.classpath"/>
 </javac>
+</target>
     <!--
 
     There exist several targets which are by default empty and which can be 
