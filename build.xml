@@ -10,7 +10,20 @@
 <project name="learning" default="default" basedir=".">
     <description>Builds, tests, and runs the project learning.</description>
     <import file="nbproject/build-impl.xml"/>
+<property name="JUNIT_HOME" value="/opt/bitnami/java/lib"/>
+<path id="JUnit 4.libraryclasspath">
+    <pathelement location="${JUNIT_HOME}/junit-4.11.jar"/>
+</path>
+<path id="projectname.classpath">
+    <pathelement location="your_bin_folder"/>
+    <path refid="JUnit 4.libraryclasspath"/>
+</path>
 
+<!--in your javac task include the classpath -->
+<javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" source="${source}" target="${target}">
+    <src path="src"/>
+    <classpath refid="projectname.classpath"/>
+</javac>
     <!--
 
     There exist several targets which are by default empty and which can be 
