@@ -27,7 +27,7 @@
                 <filtering>true</filtering>
             </resource>
             <resource>
-                <directory>tes</directory>
+                <directory>test</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>
