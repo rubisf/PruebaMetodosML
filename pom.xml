@@ -21,6 +21,12 @@
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
     <build>
+        <resources>
+            <resource>
+                <directory>src</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
