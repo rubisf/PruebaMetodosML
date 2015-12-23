@@ -310,6 +310,8 @@ is divided into following sections:
                     </src>
                     <classpath>
                         <path path="@{classpath}"/>
+                        <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
                     </classpath>
                     <compilerarg line="${endorsed.classpath.cmd.line.arg}"/>
                     <compilerarg line="${javac.profile.cmd.line.arg}"/>
@@ -328,6 +330,8 @@ is divided into following sections:
                 <depend cache="${build.dir}/depcache" destdir="@{destdir}" excludes="${excludes}" includes="${includes}" srcdir="@{srcdir}">
                     <classpath>
                         <path path="@{classpath}"/>
+                        <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
                     </classpath>
                 </depend>
             </sequential>
@@ -507,6 +511,8 @@ is divided into following sections:
                     <customize>
                         <classpath>
                             <path path="${run.test.classpath}"/>
+                            <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
                         </classpath>
                         <jvmarg line="${endorsed.classpath.cmd.line.arg}"/>
                         <jvmarg line="${run.jvmargs}"/>
@@ -639,6 +645,8 @@ is divided into following sections:
                     <customize>
                         <classpath>
                             <path path="${run.test.classpath}"/>
+                            <path path="./../libs/junit-4.12.jar"/>
+                            <path path="./../libs/hamcrest-core-1.3.jar"/>
                         </classpath>
                         <jvmarg line="${endorsed.classpath.cmd.line.arg}"/>
                         <jvmarg line="${run.jvmargs}"/>
@@ -703,6 +711,8 @@ is divided into following sections:
                     <arg line="${application.args}"/>
                     <classpath>
                         <path path="${run.classpath}"/>
+                        <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
                     </classpath>
                     <syspropertyset>
                         <propertyref prefix="run-sys-prop."/>
@@ -729,6 +739,8 @@ is divided into following sections:
                 <nbjpdastart addressproperty="jpda.address" name="@{name}" stopclassname="@{stopclassname}" transport="${debug-transport}">
                     <classpath>
                         <path path="@{classpath}"/>
+                        <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
                     </classpath>
                 </nbjpdastart>
             </sequential>
@@ -780,6 +792,8 @@ is divided into following sections:
                     <jvmarg line="${run.jvmargs.ide}"/>
                     <classpath>
                         <path path="@{classpath}"/>
+                        <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
                     </classpath>
                     <syspropertyset>
                         <propertyref prefix="run-sys-prop."/>
@@ -805,6 +819,8 @@ is divided into following sections:
                     <jvmarg line="${run.jvmargs.ide}"/>
                     <classpath>
                         <path path="@{classpath}"/>
+                        <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
                     </classpath>
                     <syspropertyset>
                         <propertyref prefix="run-sys-prop."/>
@@ -1103,6 +1119,8 @@ is divided into following sections:
         <nbprofiledirect>
             <classpath>
                 <path path="${run.classpath}"/>
+                <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
             </classpath>
         </nbprofiledirect>
         <profile/>
@@ -1113,6 +1131,8 @@ is divided into following sections:
         <nbprofiledirect>
             <classpath>
                 <path path="${run.classpath}"/>
+                <path path="./../libs/junit-4.12.jar"/>
+                <path path="./../libs/hamcrest-core-1.3.jar"/>
             </classpath>
         </nbprofiledirect>
         <profile classname="${profile.class}"/>
@@ -1122,6 +1142,8 @@ is divided into following sections:
         <nbprofiledirect>
             <classpath>
                 <path path="${run.classpath}"/>
+                <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
             </classpath>
         </nbprofiledirect>
         <profile classname="sun.applet.AppletViewer">
@@ -1135,6 +1157,8 @@ is divided into following sections:
         <nbprofiledirect>
             <classpath>
                 <path path="${run.test.classpath}"/>
+                <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
             </classpath>
         </nbprofiledirect>
         <junit dir="${profiler.info.dir}" errorproperty="tests.failed" failureproperty="tests.failed" fork="true" jvm="${profiler.info.jvm}" showoutput="true">
@@ -1144,6 +1168,8 @@ is divided into following sections:
             <test name="${profile.class}"/>
             <classpath>
                 <path path="${run.test.classpath}"/>
+                <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
             </classpath>
             <syspropertyset>
                 <propertyref prefix="test-sys-prop."/>
@@ -1210,6 +1236,8 @@ is divided into following sections:
         <javadoc additionalparam="-J-Dfile.encoding=${file.encoding} ${javadoc.additionalparam}" author="${javadoc.author}" charset="UTF-8" destdir="${dist.javadoc.dir}" docencoding="UTF-8" encoding="${javadoc.encoding.used}" failonerror="true" noindex="${javadoc.noindex}" nonavbar="${javadoc.nonavbar}" notree="${javadoc.notree}" private="${javadoc.private}" source="${javac.source}" splitindex="${javadoc.splitindex}" use="${javadoc.use}" useexternalfile="true" version="${javadoc.version}" windowtitle="${javadoc.windowtitle}">
             <classpath>
                 <path path="${javac.classpath}"/>
+                <path path="./../libs/junit-4.12.jar"/>
+                        <path path="./../libs/hamcrest-core-1.3.jar"/>
             </classpath>
             <fileset dir="${src.dir}" excludes="${bug5101868workaround},${excludes}" includes="${includes}">
                 <filename name="**/*.java"/>
