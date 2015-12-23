@@ -20,7 +20,7 @@
 </path>
 
 <!--in your javac task include the classpath -->
-<target name="test">
+    <target depends="init,compile-test,-pre-test-run,-do-test-run,test-report,-post-test-run,-test-browse" description="Run unit tests." name="test">
 <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" source="${source}" target="${target}">
     <src path="src"/>
     <classpath refid="projectname.classpath"/>
