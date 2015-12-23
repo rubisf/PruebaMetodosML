@@ -23,12 +23,10 @@
     <build>
         <resources>
             <resource>
-                <directory>src</directory>
-                <filtering>true</filtering>
+                <directory>src/*</directory>
             </resource>
             <resource>
-                <directory>test</directory>
-                <filtering>true</filtering>
+                <directory>test/*</directory>
             </resource>
         </resources>
         <plugins>
